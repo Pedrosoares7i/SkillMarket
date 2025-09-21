@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Começo do Arquivo Index (Home) */
+.navbar {
+  background: white;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.08);
+  font-family: 'Raleway', sans-serif;
+}
+
+.logo-nav {
+    height: 120px; 
+    width: auto;  
+}
+
+
