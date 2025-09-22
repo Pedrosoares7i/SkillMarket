@@ -1,15 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Começo do Arquivo Index (Home) */
-.navbar {
-  background: white;
-  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.08);
-  font-family: 'Raleway', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
-.logo-nav {
-    height: 120px; 
-    width: auto;  
+a{
+    text-decoration: none;
+    color: #4A90E2;
 }
 
+img{
+    object-fit: cover;
+}
 
+body{
+    background-color: #f1f1f1;
+}
+
+nav{
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+nav a.logo{
+    font-size: 33px;
+    color: #4A90E2;
+    font-weight: 600;
+}
+
+nav .links a:not(:last-child){
+    margin-right: 20px;
+}
+
+nav .login button{
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+nav .login button.signup{
+    background-color: #4A90E2;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 14px;
+}
