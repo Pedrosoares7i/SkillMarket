@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Começo do Arquivo Index (Home) */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: #4A90E2;
 }
 
-img{
+img {
     object-fit: cover;
 }
 
-body{
+body {
     background-color: #f1f1f1;
 }
 
-nav{
+nav {
     padding: 0 80px;
     display: flex;
     align-items: center;
@@ -29,26 +29,180 @@ nav{
     height: 80px;
 }
 
-nav a.logo{
+nav a.logo {
     font-size: 33px;
     color: #4A90E2;
     font-weight: 600;
 }
 
-nav .links a:not(:last-child){
+nav .links a:not(:last-child) {
     margin-right: 20px;
 }
 
-nav .login button{
+nav .login button {
     padding: 8px 14px;
     border: none;
     cursor: pointer;
     background-color: transparent;
 }
 
-nav .login button.signup{
+nav .login button.signup {
     background-color: #4A90E2;
     color: #fff;
     border-radius: 4px;
     margin-right: 14px;
+}
+
+/* Começo da área dos textos */
+
+.slogan {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#Skill {
+    color: #4A90E2;
+}
+
+#Market {
+    color: #ff6b6b;
+}
+
+#Comunity {
+    font-weight: 600;
+}
+
+#destaque {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Começo da área dos cursos destaques */
+.cursos-destaque {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cursos-destaque h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1f2d3d;
+}
+
+.cursos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.curso-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 280px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.curso-card:hover {
+    transform: translateY(-5px);
+}
+
+.curso-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.curso-card h3 {
+    margin: 10px 0;
+    font-size: 1.3rem;
+    color: #1f2d3d;
+}
+
+.curso-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.curso-card .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007bff;
+    /* azul */
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.curso-card .btn:hover {
+    background: #0056b3;
+}
+
+/* Começo da área dos depoimentos */
+.depoimentos {
+    background: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.titulo-depoimentos {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #1f2d3d;
+}
+
+.depoimentos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.depoimento-card {
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    max-width: 300px;
+    flex: 1 1 280px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.depoimento-card:hover {
+    transform: translateY(-5px);
+}
+
+.depoimento-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.depoimento-card h4 {
+    font-size: 1.1rem;
+    color: #1f2d3d;
+    margin-bottom: 5px;
+}
+
+.depoimento-card span {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* Começo do Arquivo login.html */
+.login-area {
+    display: flex;
+    flex-direction: column;
 }

@@ -9,6 +9,36 @@
 </head>
 
 <body>
+    <section class="login-area">
+        <div class="login-container">
+            <h2>Login</h2>
+            <p>Entre na sua conta para acessar os cursos.</p>
+
+            <form action="dashboard.html" method="post">
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+
+                <!-- Senha -->
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <!-- Botão de login -->
+                <button type="submit">Entrar</button>
+            </form>
+
+            <!-- Links adicionais -->
+            <p class="links-login">
+                <a href="cadastro.html">Criar conta</a> |
+                <a href="recuperar-senha.html">Esqueceu a senha?</a>
+            </p>
+        </div>
+    </section>
+
 </body>
 
 </html>
