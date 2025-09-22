@@ -202,7 +202,108 @@ nav .login button.signup {
 }
 
 /* Começo do Arquivo login.html */
+
+/* Área de login */
 .login-area {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: #f8f9fa;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.login-container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #1f2d3d;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #4A90E2;
+    /* cor primária do SkillMarket */
+    outline: none;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background: #4A90E2;
+    /* cor primária */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-login:hover {
+    background: #357ABD;
+}
+
+.links-login {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.links-login a {
+    color: #4A90E2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links-login a:hover {
+    color: #357ABD;
+}
+
+.logo-login {
+    height: 200px;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+.cursos-andamento {
+    margin: 20px;
+    margin-top: 20px;
 }
