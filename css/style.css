@@ -258,7 +258,6 @@ nav .login button.signup {
 
 .form-group input:focus {
     border-color: #4A90E2;
-    /* cor primária do SkillMarket */
     outline: none;
 }
 
@@ -266,7 +265,6 @@ nav .login button.signup {
     width: 100%;
     padding: 12px;
     background: #4A90E2;
-    /* cor primária */
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -305,7 +303,7 @@ nav .login button.signup {
 
 .cursos-andamento {
     margin: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 #rosto-triste {
@@ -335,3 +333,27 @@ nav .login button.signup {
     justify-content: space-evenly;
 }
 
+.frase-motivacao {
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.frase-motivacao p {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+    font-size: 12px;
+    margin-top: auto;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+footer span {
+    font-weight: bold;
+    font-size: 14px;
+    color: #ff6b6b;
+}
