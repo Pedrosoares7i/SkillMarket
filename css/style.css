@@ -357,3 +357,26 @@ footer span {
     font-size: 14px;
     color: #ff6b6b;
 }
+
+/* Começo sobre.html */
+
+#h1-sobre {
+    font-weight: 900;
+    padding: 40px;
+}
+
+.titulo-sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 40px;
+}
+
+.paragrafo-sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 40px;
+    background-color: #ff6b6b;
+    margin: auto;
+}
