@@ -360,23 +360,364 @@ footer span {
 
 /* Começo sobre.html */
 
-#h1-sobre {
-    font-weight: 900;
-    padding: 40px;
+.duas-colunas {
+    padding: 60px 0;
 }
 
-.titulo-sobre {
+
+.container-flex {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    padding: 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 0 20px;
 }
 
-.paragrafo-sobre {
+.coluna-imagem,
+.coluna-texto {
+    flex: 1;
+}
+
+.imagem-conteudo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.coluna-texto h2 {
+    color: #1E2C4B;
+    margin-bottom: 15px;
+}
+
+.coluna-texto p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00C4CC;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .container-flex {
+        flex-direction: column;
+    }
+
+    .coluna-imagem,
+    .coluna-texto {
+        flex: unset;
+        width: 100%;
+    }
+
+    .coluna-imagem {
+        margin-bottom: 20px;
+    }
+}
+
+/* Começo do arquivo cursos.html */
+
+:root {
+    --primary-color: #00C4CC;
+    --secondary-color: #1E2C4B;
+    --text-color: #333333;
+    --background-light: #F0F4F8;
+    --white: #ffffff;
+    --gray-text: #666666;
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- CATÁLOGO HEADER --- */
+
+.catalogo-header {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 40px 0 60px 0;
+    text-align: center;
+}
+
+.catalogo-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.catalogo-header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.search-bar-catalogo {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    padding: 40px;
-    background-color: #ff6b6b;
-    margin: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--white);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar-catalogo input {
+    flex-grow: 1;
+    padding: 14px 20px;
+    border: none;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.search-btn {
+    padding: 14px 25px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #00A3A8;
+}
+
+/* --- FILTROS E BOTÕES --- */
+
+.catalogo-filtros {
+    padding: 30px 0;
+    background-color: var(--background-light);
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.filtros-e-ordenacao {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.bloco-filtros,
+.bloco-ordenacao {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.filtro-label {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-right: 15px;
+}
+
+.filtro-label i {
+    margin-right: 5px;
+}
+
+.btn-filtro,
+.btn-ordenacao {
+    background-color: var(--white);
+    color: var(--text-color);
+    border: 1px solid #CCCCCC;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    white-space: nowrap; 
+}
+
+.btn-filtro:hover,
+.btn-ordenacao:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 196, 204, 0.2);
+}
+
+.btn-filtro.active,
+.btn-ordenacao.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color); 
+    border-color: var(--primary-color);
+    font-weight: 600;
+}
+
+.btn-more-options {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-color: var(--secondary-color);
+}
+.btn-more-options:hover {
+    opacity: 0.9;
+}
+
+/* --- GRID DE CARDS DE CURSOS CENTRALIZADO --- */
+
+.cursos-grid-area {
+    padding: 60px 0 80px 0;
+    background-color: var(--white);
+}
+
+.grid-wrapper {
+    display: flex; 
+    justify-content: center; /* Centraliza o elemento .cursos-grid */
+}
+
+.cursos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Colunas no desktop */
+    gap: 30px; 
+    max-width: 900px; /* Limita a largura para permitir o alinhamento central */
+    width: 100%;
+}
+
+.card-curso {
+    background-color: var(--white);
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-curso:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
+    display: block;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: rgba(0, 196, 204, 0.1); 
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    color: var(--gray-text);
+    margin-bottom: 15px;
+    height: 40px; 
+    overflow: hidden;
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--gray-text);
+    margin-bottom: 20px;
+}
+
+.card-meta i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+.btn-primary {
+    display: block; 
+    width: 100%;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #111a2f; 
+}
+
+.load-more-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-load-more {
+    padding: 12px 30px;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-load-more:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* --- RESPONSIVIDADE --- */
+
+@media (max-width: 992px) {
+    .filtros-e-ordenacao {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .bloco-filtros, .bloco-ordenacao {
+        width: 100%; 
+        justify-content: flex-start;
+    }
+
+    .cursos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 576px) {
+    .search-bar-catalogo {
+        flex-direction: column; 
+    }
+    .search-bar-catalogo input, .search-btn {
+        width: 100%;
+        border-radius: 0;
+    }
+    .search-btn {
+        border-bottom-left-radius: 8px; 
+        border-bottom-right-radius: 8px;
+    }
+    
+    .cursos-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
 }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillMarket - Catálogo de Cursos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="logo">SkillMarket</a>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="dashboard.html">Perfil</a>
+        </div>
+        <div class="login">
+            <button class="signup">Get Started</button>
+            <button>Login</button>
+        </div>
+    </nav>
+
+    <section class="catalogo-filtros">
+        <div class="container filtros-e-ordenacao">
+
+            <div class="bloco-filtros">
+                <span class="filtro-label"><i class="fas fa-filter"></i> Filtrar por:</span>
+                <button class="btn-filtro active">Todos os Cursos</button>
+                <button class="btn-filtro">Desenvolvimento Web</button>
+                <button class="btn-filtro">Design UX/UI</button>
+                <button class="btn-filtro">Marketing Digital</button>
+                <button class="btn-filtro btn-more-options">Mais Filtros...</button>
+            </div>
+
+            <div class="bloco-ordenacao">
+                <span class="filtro-label"><i class="fas fa-sort-amount-down"></i> Ordenar por:</span>
+                <button class="btn-ordenacao active">Populares</button>
+                <button class="btn-ordenacao">Melhor Avaliados</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cursos-grid-area">
+        <div class="container">
+
+            <div class="grid-wrapper">
+
+                <div class="cursos-grid">
+                    <div class="card-curso">
+                        <img src="/img/fullstack.jpg" alt="Miniatura do Curso 1" class="card-image">
+                        <div class="card-body">
+                            <span class="card-tag">Dev Web</span>
+                            <h3 class="card-title">Desenvolvimento Full-Stack do Zero ao Profissional</h3>
+                            <p class="card-description">Domine React, Node.js e Bancos de Dados para construir
+                                aplicações robustas.</p>
+                            <div class="card-meta">
+                                <span class="meta-item"><i class="fas fa-star"></i> 4.8</span>
+                                <span class="meta-item"><i class="fas fa-users"></i> 12k Alunos</span>
+                            </div>
+                            <button class="btn-primary">Inscreva-se Agora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-curso">
+                        <img src="/img/fullstack.jpg" alt="Miniatura do Curso 2" class="card-image">
+                        <div class="card-body">
+                            <span class="card-tag">UX/UI Design</span>
+                            <h3 class="card-title">Masterclass em Figma: Do Wireframe ao Protótipo Avançado</h3>
+                            <p class="card-description">Crie interfaces de usuário intuitivas e esteticamente
+                                agradáveis, focando em usabilidade.</p>
+                            <div class="card-meta">
+                                <span class="meta-item"><i class="fas fa-star"></i> 4.9</span>
+                                <span class="meta-item"><i class="fas fa-users"></i> 8k Alunos</span>
+                            </div>
+                            <button class="btn-primary">Inscreva-se Agora</button>
+                        </div>
+                    </div>
+
+                    <div class="card-curso">
+                        <img src="/img/fullstack.jpg" alt="Miniatura do Curso 3" class="card-image">
+                        <div class="card-body">
+                            <span class="card-tag">Marketing</span>
+                            <h3 class="card-title">Estratégias de SEO e Tráfego Orgânico 2024</h3>
+                            <p class="card-description">Aprenda a otimizar seu conteúdo e aumentar sua visibilidade nos
+                                motores de busca.</p>
+                            <div class="card-meta">
+                                <span class="meta-item"><i class="fas fa-star"></i> 4.7</span>
+                                <span class="meta-item"><i class="fas fa-users"></i> 15k Alunos</span>
+                            </div>
+                            <button class="btn-primary">Inscreva-se Agora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more-container">
+                <button class="btn-load-more">Carregar Mais Cursos...</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+
+</html>
